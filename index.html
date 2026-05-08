@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Busca tu mesa</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app" aria-live="polite">
+      <section class="hero">
+        <p class="couple">Juancho &amp; Flo</p>
+        <h1>Busca tu mesa</h1>
+      </section>
+
+      <section class="search-panel">
+        <label class="sr-only" for="surname">Ingresa tu apellido</label>
+        <input
+          id="surname"
+          type="search"
+          autocomplete="family-name"
+          placeholder="Escribe tu apellido"
+          inputmode="text"
+        >
+        <button id="clearButton" type="button" aria-label="Limpiar búsqueda">×</button>
+      </section>
+
+      <section id="result" class="result-panel empty">
+        <p>Ingresa tu apellido para encontrar tu mesa.</p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
